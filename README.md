@@ -53,7 +53,6 @@ Icons
 
 Used react-icons library for lightweight, consistent, and scalable icons.
 
-While the application was built with responsiveness and interactivity in mind, I was unable to implement the following due to time constraints:
+While the application was built with designing and interactivity in mind, I was unable to implement following:
 
-- Adding aria-label attributes to buttons for screen reader compatibility.
-- Implementing comprehensive SEO optimizations.
+- Adding aria-label attributes to buttons for screen reader compatibility & Implementing comprehensive SEO optimizations.
