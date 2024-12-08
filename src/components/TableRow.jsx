@@ -21,11 +21,15 @@ const TableRow = ({ row }) => {
         {row.date}
       </div>
       <div
-        className={`font-normal text-base flex flex-row items-center h-full border-[#f7f7f8] border-t ${
-          row.showDate ? "border-[#f7f7f8] border-t" : ""
-        }`}
+        className={`font-normal text-base flex flex-row items-center h-full`}
       >
-        <Avatar name={row.toFrom} />
+        <div
+          className={`h-full flex justify-center items-center ${
+            row.showDate ? "border-[#f7f7f8] border-t" : ""
+          } `}
+        >
+          <Avatar name={row.toFrom} showDate={row.showDate} />
+        </div>
         <div className="flex flex-1 items-center w-full border-[#f7f7f8] border-t h-full">
           {row.toFrom}
         </div>

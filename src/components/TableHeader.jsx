@@ -2,7 +2,7 @@ import React from "react";
 
 const TableHeader = () => {
   return (
-    <div className="table-header sticky">
+    <div className="table-header sticky border-[#f7f7f8] border-b">
       <div className="rounded-sm">
         <div className="py-2 px-2 text-left cursor-pointer hover:bg-[#f7f7f8]">
           Date <span className="text-[9px]">(GMT+5:30)</span>
