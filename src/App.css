@@ -1,0 +1,47 @@
+.app {
+  height: 100vh;
+}
+
+.table-container {
+  border-radius: 8px;
+  max-width: 968px;
+  margin: auto !important;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.5fr;
+}
+
+.table-header {
+  background-color: #fff;
+  color: #70707d;
+  font-size: 12px;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+}
+
+.table-row {
+  align-items: center;
+}
+
+.table-row .positive {
+  color: green;
+}
+
+.table-row .negative {
+  color: red;
+}
+
+.filters {
+  padding: 24px 0 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f9f9f9;
+}
