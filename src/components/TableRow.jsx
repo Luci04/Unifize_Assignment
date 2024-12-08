@@ -4,10 +4,13 @@ import { FaPlus } from "react-icons/fa6";
 import Avatar from "./Avatar";
 import { FaRegCreditCard } from "react-icons/fa6";
 
+const formatAmount = (amount) => {
+  const [whole, decimal] = amount.toFixed(2).split(".");
+  return { whole, decimal };
+};
+
 const TableRow = ({ row }) => {
-  if (row.showDate) {
-    console.log(row.showDate);
-  }
+  const { whole, decimal } = formatAmount(row.amount);
 
   return (
     <div className="table-row group hover:bg-[#f7f7f8] transition-all duration-500 rounded-sm h-12 text">
@@ -41,15 +44,14 @@ const TableRow = ({ row }) => {
             : "font-normal text-base text-right border-[#f7f7f8] border-t h-full items-center flex"
         }
       >
-        {row.amount.toString().split(".")}
+        {whole}
         <span
           className="relative -top-1"
           style={{
             fontSize: "0.73em",
           }}
         >
-          {row.amount.toString().split(".")[1] &&
-            "." + row.amount.toString().split(".")[1]}
+          {decimal && " ." + decimal}
         </span>
       </div>
       <div className="w-48 text-right border-[#f7f7f8] border-t items-center flex h-full">

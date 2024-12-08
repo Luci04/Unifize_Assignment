@@ -3,26 +3,24 @@ import React from "react";
 const TableHeader = () => {
   return (
     <div className="table-header sticky border-[#f7f7f8] border-b">
-      <div className="rounded-sm">
-        <div className="py-2 px-2 text-left cursor-pointer hover:bg-[#f7f7f8]">
-          Date <span className="text-[9px]">(GMT+5:30)</span>
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="caret-down"
-            width={"7.5px"}
-            className="svg-inline--fa fa-caret-down styles__carat_QTi3c"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512"
-          >
-            <path
-              fill="currentColor"
-              d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
-            ></path>
-          </svg>
-        </div>
+      <div className="py-2 px-2 rounded-t-md text-left cursor-pointer hover:bg-[#f7f7f8] hover:text-black">
+        Date <span className="text-[9px]">(GMT+5:30)</span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="caret-down"
+          width={"7.5px"}
+          className="svg-inline--fa fa-caret-down styles__carat_QTi3c"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path
+            fill="currentColor"
+            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+          ></path>
+        </svg>
       </div>
 
       <div className="flex flex-row items-center h-full">To/From</div>
